@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="MiEstilo.css">
+<title>Formulario de contacto</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="Cursos.html">Cursos</a></li>
+            <li><a href="Proyectos.html">Proyectos realizados</a></li>
+            <li><a href="Tematicas.html">Temáticas de interés</a></li>
+            <li><a class="active" href="Formulario.html">Formulario de contacto</a></li>
+          </ul>
+        </nav>
+
+        <article>
+            <h1>Ponte en contacto conmigo:</h1>
+            <form action="bjbm@hotmail.com" method="post">
+
+                <label for="Nombre"></label>
+                Nombre: <input type="text" id="Nombre" name="Nombre" placeholder="Tu nombre" maxlength="50"><br><br>
+            
+                <label for="Apellidos"></label>
+                Apellidos: <input type="text" id="Apellidos" name="Apellidos" placeholder="Tus apellidos" maxlength="50"><br><br>
+            
+                <label for="Teléfono"></label>
+                Teléfono: <input type="text" id="Teléfono" name="Teléfono" placeholder="Tu nº de Teléfono*" pattern="[6,9]{1}[0-9]{8}" size="18" required><br><br>
+            
+                <label for="Correo"></label>
+                Correo: <input type="text" id="Correo" name="Correo" placeholder="Tu E-mail*" required><br><br>
+                
+                <label for="Asunto"></label>
+                Asunto: <input type="text" id="Asunto" name="Asunto" placeholder="Asunto del mensaje"><br><br>
+            
+                <label for="Mensaje"></label>
+                Mensaje: <textarea id="Mensaje" name="Mensaje" rows="9" cols="60" placeholder="Tu mensaje*" required></textarea><br><br>
+            
+                <input type="submit" value="Enviar">
+            
+              </form>
+              <p>(Los campos con * son obligatorios.)</p>
+        </article>
+
+        <footer>
+            <p>Bryan Barral Medina</p>
+        </footer>
+
+</body>
+</html>
